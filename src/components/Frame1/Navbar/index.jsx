@@ -7,10 +7,25 @@ const navTabs = ['Home', 'Shop', 'Features', 'Pricing'];
 const Navbar = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [coords, setCoords] = useState({});
+  console.log('coords', coords);
   const tablistRef = useRef();
   useEffect(() => {
-    if (tablistRef.current)
-      setCoords(tablistRef.current.firstChild.getBoundingClientRect());
+    if (tablistRef.current) {
+      const firstTab = tablistRef.current.firstChild;
+      setCoords(firstTab.getBoundingClientRect());
+      // Fix lỗi lấy sai coords trong lần render đầu tiên, không hiểu vì sao lại chạy sai
+      const initCoords = {
+        bottom: 75.5,
+        height: 21,
+        left: 573.4125366210938,
+        right: 627.4000358581543,
+        top: 54.5,
+        width: 53.98749923706055,
+        x: 573.4125366210938,
+        y: 54.5,
+      };
+      setCoords(initCoords);
+    }
   }, [tablistRef]);
 
   return (

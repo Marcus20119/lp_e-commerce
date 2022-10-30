@@ -1,4 +1,35 @@
 .mainInfo {
+  position: absolute;
+  top: 216px;
+  left: 86px;
+  max-width: 498px;
+
+  &Title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 70px;
+      color: #23254b;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+      color: #fc9f66;
+    }
+  }
+  &Description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #a0a0a0;
+    margin-bottom: 56px;
+    font-family: 'Roboto', sans-serif;
+  }
 }
 .subInfo {
 }
@@ -31,6 +62,6 @@
   left: 1002px;
   top: 263px;
 
-  background: #ffa16a;
+  background: var(--primary-color);
   filter: blur(85px);
 }
