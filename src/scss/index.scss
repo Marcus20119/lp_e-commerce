@@ -1,3 +1,4 @@
+@import './variables';
 @import './fonts';
 
 body {
@@ -31,4 +32,7 @@ a {
 }
 li {
   list-style: none;
+}
+button {
+  border: none;
 }

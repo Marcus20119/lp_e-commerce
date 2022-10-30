@@ -1,8 +1,27 @@
-.primaryButton {
-  display: flex;
+.primaryButtonLarge {
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
   padding-top: 20px;
   padding-bottom: 20px;
+  border-radius: 14px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fafafa;
+}
+.primaryButtonSmall {
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fafafa;
+}
+.primaryButtonLarge:hover,
+.primaryButtonSmall:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
