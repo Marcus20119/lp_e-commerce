@@ -1,0 +1,67 @@
+.mainInfo {
+  position: absolute;
+  top: 216px;
+  left: 86px;
+  max-width: 498px;
+
+  &Title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 70px;
+      color: #23254b;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+      color: #fc9f66;
+    }
+  }
+  &Description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #a0a0a0;
+    margin-bottom: 56px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.subInfo {
+}
+.tShirtImg {
+  display: block;
+  position: absolute;
+  left: 605.04px;
+  top: 136.5px;
+}
+.abstract1 {
+  display: block;
+  position: absolute;
+  width: 88.6px;
+  height: 86px;
+  left: 547px;
+  top: 169px;
+}
+.abstract2 {
+  display: block;
+  position: absolute;
+  width: 88.6px;
+  height: 88px;
+  left: 942px;
+  top: 527px;
+}
+.blurShape {
+  position: absolute;
+  width: 123px;
+  height: 184px;
+  left: 1002px;
+  top: 263px;
+
+  background: var(--primary-color);
+  filter: blur(85px);
+}
