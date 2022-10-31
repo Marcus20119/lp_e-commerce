@@ -1,0 +1,56 @@
+.searchBar {
+  position: absolute;
+  right: 89px;
+  bottom: 50px;
+  left: 86px;
+  height: 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 22px 35px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  &TabWrap {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+  }
+  &TabItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    border-radius: 8px;
+    padding: 13px 24px;
+
+    h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #000;
+    }
+
+    &Subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      color: #75797c;
+      h6 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+  }
+  &TabItem:hover {
+    cursor: pointer;
+    background-color: #ededed !important;
+  }
+}

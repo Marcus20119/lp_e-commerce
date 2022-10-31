@@ -7,7 +7,6 @@ const navTabs = ['Home', 'Shop', 'Features', 'Pricing'];
 const Navbar = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [coords, setCoords] = useState({});
-  console.log('coords', coords);
   const tablistRef = useRef();
   useEffect(() => {
     if (tablistRef.current) {
