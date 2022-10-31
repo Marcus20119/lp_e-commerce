@@ -15,7 +15,7 @@ function MainContent(){
             <div className={styles.imgVideoFrame}>
                 <img className={styles.imgFrame} src="Rectangle 14.png" alt="Rectangle 14"/>
                 <div className={styles.videoCard}>
-                    <img src="man.png" className="videoImg"  alt="man" />
+                    <img src="man.png" className={styles.videoImg}  alt="man" />
                     <div className={styles.btnPlay}>
                         <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="30.3592" cy="30" rx="29.9744" ry="30" fill="#030303" fillOpacity="0.77"/>
