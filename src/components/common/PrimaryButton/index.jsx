@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import styles from './PrimaryButton.module.scss';
 
 const PrimaryButton = ({
@@ -9,7 +10,6 @@ const PrimaryButton = ({
   color = 'primary',
   style = {},
 }) => {
-  console.log('style', style);
   return (
     <Fragment>
       {size === 'large' && (
@@ -46,6 +46,15 @@ const PrimaryButton = ({
       )}
     </Fragment>
   );
+};
+
+PrimaryButton.propsTypes = {
+  widthType: PropTypes.oneOf(['full', 'fit']).isRequired,
+  children: PropTypes.any.isRequired,
+  type: PropTypes.string,
+  size: PropTypes.oneOf(['large', 'small']),
+  color: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default PrimaryButton;
