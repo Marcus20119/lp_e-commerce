@@ -1,0 +1,63 @@
+.mainSologan{
+    position: absolute;
+    width: 100%;
+    height: 243px;
+    bottom:0;
+    background-color: #ededed;
+}
+.sologanQuote {
+    position: absolute;
+    width: 340px;
+    top:50px;
+    bottom: 101px;
+    left: 88px;
+    right: 721px;
+    h2{
+        color: #2f395d;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+.comma{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    left: 330px;
+    top: 155px;
+}
+.imgVideoFrame {
+    position: absolute;
+    width: 330px;
+    height: 270px;
+    right: 375px;
+    top:0;
+
+    .imgFrame{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .videoCard{
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        .btnPlay{
+            position: absolute;
+            top: 85px;
+            right: 80px;
+        }
+    }
+}
+.vectorImg{
+    position: absolute;
+    top:145px;
+    right: 90px;
+}
+.abstract{
+    position: absolute;
+    width:60px;
+    top:260px;
+    right:410px;
+}
