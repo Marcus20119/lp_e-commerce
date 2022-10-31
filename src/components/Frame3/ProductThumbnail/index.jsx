@@ -1,6 +1,6 @@
 import styles from './ProductThumnail.module.scss'
 import { Fragment } from 'react'
-import PrimaryButton from '~/components/common/PrimaryButton'
+import { useState } from 'react';
 
 function ProductThumnail(){
     const products =[
@@ -29,18 +29,34 @@ function ProductThumnail(){
             discount: '200$',
         },
     ]
+    const [activeBuy,setActiveBuy]= useState(0)
     return(
         <div>
             <div className={styles.thumbnailContainer}>
                 {products.map((product,index) => {
                     return(
-                        <div key={index} className={styles.productCard}>
+                        <div 
+                            key={index} 
+                            style={index === activeBuy ?{
+                                boxShadow : "0px 4px 34px rgba(132, 132, 132, 0.5)"
+                            }:{}} 
+                            className={styles.productCard}
+                        >
                             <img src={product.productImg} alt={product.productName} />
                             <div className={styles.productInfo}>
                                 <h3>{product.productName}</h3>
                                 <h3>{product.productPrice}<span>$</span></h3>
                                 <p>{product.discount}</p>
-                                <button className={styles.buttonBuy}>Buy</button>
+                                <button 
+                                    className={styles.buttonBuy}
+                                    style={index === activeBuy ?{
+                                        color:'#fff',
+                                        backgroundColor:'var(--primary-color)'
+                                    }:{}}
+                                    onClick={()=>setActiveBuy(index)}
+                                >
+                                    Buy
+                                </button>
                             </div>
                         </div>
                     )
