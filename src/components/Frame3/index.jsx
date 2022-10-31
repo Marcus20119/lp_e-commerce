@@ -1,3 +1,4 @@
+
 import styles from './Frame3.module.scss'
 import ProductSection from './ProductSection';
 import ProductThumnail from './ProductThumbnail';
@@ -11,3 +12,4 @@ const Frame3 = () => {
 };
 
 export default Frame3;
+

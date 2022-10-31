@@ -3,9 +3,9 @@ import MainContent from './MainContent';
 const Frame2 = () => {
   return (
     <div className={styles.frame2}>
-        <MainContent />
+      <MainContent />
     </div>
-    );
+  );
 };
 
 export default Frame2;
