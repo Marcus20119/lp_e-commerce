@@ -39,7 +39,8 @@ const MainContent = () => {
               fontFamily: "'Roboto', sans-serif",
               paddingRight: '50px',
               paddingLeft: '50px',
-            }}>
+            }}
+          >
             Explore now
           </PrimaryButton>
           <div className={styles.mainInfoBtnPlay}>
@@ -49,7 +50,8 @@ const MainContent = () => {
                 height="11"
                 viewBox="0 0 11 11"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M8.9151 5.54708L0.721647 10.1585L0.824727 0.757077L8.9151 5.54708Z"
                   fill="#3C3C3E"

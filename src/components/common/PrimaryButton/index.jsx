@@ -24,7 +24,8 @@ const PrimaryButton = ({
             backgroundColor:
               color === 'primary' ? 'var(--primary-color)' : color,
             ...style,
-          }}>
+          }}
+        >
           {children}
         </button>
       )}
@@ -40,7 +41,8 @@ const PrimaryButton = ({
             backgroundColor:
               color === 'primary' ? 'var(--primary-color)' : color,
             ...style,
-          }}>
+          }}
+        >
           {children}
         </button>
       )}
