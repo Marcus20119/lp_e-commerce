@@ -1,8 +1,6 @@
-import styles from './ProductThumnail.module.scss'
-import { Fragment } from 'react'
-import { useState } from 'react';
+import styles from './ProductThumbnail.module.scss'
 
-function ProductThumnail(){
+function ProductThumbnail(){
     const products =[
         {
             productImg:'T-sirt.png',
@@ -29,7 +27,6 @@ function ProductThumnail(){
             discount: '200$',
         },
     ]
-    const [activeBuy,setActiveBuy]= useState(0)
     return(
         <div>
             <div className={styles.thumbnailContainer}>
@@ -37,9 +34,6 @@ function ProductThumnail(){
                     return(
                         <div 
                             key={index} 
-                            style={index === activeBuy ?{
-                                boxShadow : "0px 4px 34px rgba(132, 132, 132, 0.5)"
-                            }:{}} 
                             className={styles.productCard}
                         >
                             <img src={product.productImg} alt={product.productName} />
@@ -49,11 +43,6 @@ function ProductThumnail(){
                                 <p>{product.discount}</p>
                                 <button 
                                     className={styles.buttonBuy}
-                                    style={index === activeBuy ?{
-                                        color:'#fff',
-                                        backgroundColor:'var(--primary-color)'
-                                    }:{}}
-                                    onClick={()=>setActiveBuy(index)}
                                 >
                                     Buy
                                 </button>
@@ -65,4 +54,4 @@ function ProductThumnail(){
         </div>
     )
 }
-export default ProductThumnail
+export default ProductThumbnail
