@@ -1,0 +1,17 @@
+.container {
+    padding: 70px 130px;
+    display: flex;
+    justify-content: space-around;
+    .StatisticCol {
+        padding: 0 100px;
+        h1 {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 70px;
+        }
+    }
+    .break {
+        background-color: #BBBBBB;
+        width: 1px;
+    }
+}
