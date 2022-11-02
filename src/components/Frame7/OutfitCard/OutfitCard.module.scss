@@ -1,0 +1,54 @@
+.outfit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 12px;
+
+  &Img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  &Info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 12px;
+
+    &Title {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+
+      h5 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: black;
+      }
+      h6 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #bababa;
+      }
+    }
+    &Price {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 28px;
+
+      color: #fe9e66;
+    }
+  }
+}
+.outfit:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
