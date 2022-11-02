@@ -1,0 +1,56 @@
+.headerWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  width: 100%;
+}
+.headerTitle {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 30px;
+  color: black;
+}
+.headerNavbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &Tabs {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+  }
+  &Tab {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 18px 30px;
+    cursor: pointer;
+  }
+  &Tab:hover {
+    opacity: 0.8;
+    transform: translateY(-2%);
+  }
+  &TabActive {
+    font-weight: 500;
+  }
+  &GrayLine {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: #b3b3b3;
+  }
+  &OrangeLine {
+    position: absolute;
+    bottom: -1px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+  }
+}
