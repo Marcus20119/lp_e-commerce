@@ -1,12 +1,12 @@
 
 import styles from './Frame3.module.scss'
 import ProductSection from './ProductSection';
-import ProductThumnail from './ProductThumbnail';
+import ProductThumbnail from './ProductThumbnail';
 const Frame3 = () => {
   return (
     <div className={styles.frame3}>
       <ProductSection />
-      <ProductThumnail/>
+      <ProductThumbnail/>
     </div>
   )
 };
