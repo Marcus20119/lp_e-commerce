@@ -1,0 +1,121 @@
+.bodyWrap {
+  position: relative;
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.blurShape {
+  position: absolute;
+  width: 141px;
+  height: 182px;
+  left: 720px;
+  top: 120px;
+  background: var(--primary-color);
+  filter: blur(150px);
+}
+.bodyContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 216px;
+
+  &Left {
+    position: relative;
+    height: 100%;
+
+    &Video {
+      position: relative;
+      height: 100%;
+      cursor: pointer;
+
+      &Img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 12px;
+      }
+
+      &Icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 116px;
+        height: 116px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        z-index: 20;
+      }
+      &Img:hover,
+      &Icon:hover + &Img {
+        z-index: 10;
+        box-shadow: 0 0 100px rgba(218, 138, 92, 0.3);
+      }
+    }
+    &Pic {
+      position: absolute;
+      top: 206px;
+      left: 349px;
+    }
+    &Pic:hover {
+      z-index: 10;
+      box-shadow: 0 0 100px rgba(218, 138, 92, 0.3);
+      cursor: pointer;
+    }
+  }
+  &Right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+
+    &Title {
+      width: 70%;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 70px;
+      color: #23254b;
+      margin-bottom: 26px;
+    }
+    &Description {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      color: #828282;
+      margin-bottom: 34px;
+    }
+    &UnderLine {
+      margin-top: auto;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 4px;
+      gap: 12px;
+
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      &Start {
+        color: #222222;
+      }
+      &Dash {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &End {
+        color: #fe9e66;
+      }
+    }
+  }
+}
