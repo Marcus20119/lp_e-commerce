@@ -1,14 +1,14 @@
-import styles from './Frame4.module.scss'
+import styles from './Frame5.module.scss'
 import { Fragment } from 'react'
 import AdvantageContent from './AdvantageContent'
 
-function Frame4(){
+function Frame5(){
     return (
         <Fragment>
-            <div className={styles.Frame4}>
+            <div className={styles.Frame5}>
                 <AdvantageContent />
             </div>
         </Fragment>
     )
 }
-export default Frame4
+export default Frame5
