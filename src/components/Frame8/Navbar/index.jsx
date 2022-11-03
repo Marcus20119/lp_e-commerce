@@ -13,13 +13,19 @@ const Navbar = () => {
                         <a 
                             key={index}
                             href="#"
-                            style={active===index?{color:'var(--primary-color)'}:{}}
+                            style={active===index?{
+                                color:'var(--primary-color)'
+                                
+                            }:{}}
                             onClick={(e)=>{
                                 setActive(index);
                                 e.preventDefault();
                             }}
                         >
                             {item}
+                            {active===index?
+                                <span className={styles.active}></span>
+                            :''}
                         </a>
                     )
                 })}

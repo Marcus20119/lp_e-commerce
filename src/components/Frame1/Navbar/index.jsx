@@ -85,6 +85,7 @@ const Navbar = () => {
             >
               {tab}
             </a>
+            
           ))}
         </div>
         {tablistRef.current && (
