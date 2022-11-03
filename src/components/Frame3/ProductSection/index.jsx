@@ -10,9 +10,9 @@ function ProductSection(){
                 <PrimaryButton
                     widthType="fit"
                     style={{
-                      fontFamily: "'Roboto', sans-serif",
-                      paddingRight: '30px',
-                      paddingLeft: '30px',
+                        fontFamily: "'Roboto', sans-serif",
+                        paddingRight: '30px',
+                        paddingLeft: '30px',
                     }}
                 >
                     <span>See all Product</span>
