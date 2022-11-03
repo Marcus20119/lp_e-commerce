@@ -8,6 +8,7 @@ import Frame6 from '~/components/Frame6';
 import Frame7 from '~/components/Frame7';
 import Frame8 from '~/components/Frame8';
 import Frame9 from '~/components/Frame9';
+
 import styles from './App.module.scss';
 
 function App() {

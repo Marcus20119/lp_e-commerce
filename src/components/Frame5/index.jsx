@@ -1,5 +1,14 @@
-const Frame5 = () => {
-  return <div></div>;
-};
+import styles from './Frame5.module.scss'
+import { Fragment } from 'react'
+import AdvantageContent from './AdvantageContent'
 
-export default Frame5;
+function Frame5(){
+    return (
+        <Fragment>
+            <div className={styles.Frame5}>
+                <AdvantageContent />
+            </div>
+        </Fragment>
+    )
+}
+export default Frame5
