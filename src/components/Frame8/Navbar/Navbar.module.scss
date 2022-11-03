@@ -1,0 +1,37 @@
+.container {
+    margin-bottom: 120px;
+    .title {
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 230px;
+        padding: 0 30px;
+        background-color: #F4F4F4;
+        border-radius: 10px;
+        border: 10px solid #fff;
+        box-shadow: 0px 4px 34px rgba(132, 132, 132, 0.5);
+        a {
+            color: #23254B;
+            padding: 20px 0;
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+            &:hover {
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    width: 100%;
+                    background-color: #23254B;
+                    transform-origin: right top;
+                    transition: transform 0.2 ease-out;
+                }
+            }
+        }
+    }
+}
